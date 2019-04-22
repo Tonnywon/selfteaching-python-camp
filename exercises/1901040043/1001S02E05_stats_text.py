@@ -24,9 +24,9 @@ If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 '''
 
-list1 = text.split(' ')
+list1 = text.split(' ') #去除样本中的空格
 for i in range(len(list1)):
-    list1[i] = list1[i].strip(',*-.!,.\n,:, ,' ',''')
+    list1[i] = list1[i].strip(',*-.!,.\n,:, ,' ',''') #去除样本中的各种标点符号
     
 set1 = set(list1)
 list2 = list(set1)
